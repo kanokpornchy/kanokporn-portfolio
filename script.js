@@ -1,6 +1,25 @@
 console.log("Portfolio website loaded");
 
 
+// CLEAN URL PARAMETER
+// ลบ ?utm_source=... หรือ query string ออกจาก URL
+// โดยไม่ Reload หน้าเว็บ
+
+if (window.location.search) {
+  const cleanUrl =
+    window.location.origin +
+    window.location.pathname +
+    window.location.hash;
+
+  window.history.replaceState(
+    {},
+    document.title,
+    cleanUrl
+  );
+}
+
+
+
 // NAVBAR ACTIVE MENU
 
 // หา Link ทั้งหมดใน Navbar
@@ -175,7 +194,6 @@ document.addEventListener("keydown", function (event) {
 
 
 
-
 // CLICK OUTSIDE GALLERY
 
 const galleryModals =
@@ -216,6 +234,7 @@ if (imageLightbox) {
 
 
 // PREVENT IMAGE DRAG
+
 
 // กันการลากรูปใน Gallery
 const galleryImages =
