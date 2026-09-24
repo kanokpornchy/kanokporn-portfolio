@@ -1,6 +1,5 @@
 console.log("Portfolio website loaded");
 
-
 // CLEAN URL PARAMETER
 // ลบ ?utm_source=... หรือ query string ออกจาก URL
 // โดยไม่ Reload หน้าเว็บ
@@ -18,8 +17,6 @@ if (window.location.search) {
   );
 }
 
-
-
 // NAVBAR ACTIVE MENU
 
 // หา Link ทั้งหมดใน Navbar
@@ -27,7 +24,6 @@ const navLinks = document.querySelectorAll(".nav-menu a");
 
 // หา Section ทั้งหมด
 const sections = document.querySelectorAll("section");
-
 
 // ฟังก์ชันตรวจสอบ Section ปัจจุบัน
 function updateActiveMenu() {
@@ -46,7 +42,6 @@ function updateActiveMenu() {
     }
   });
 
-
   // ลบ active จากเมนูทั้งหมดก่อน
   navLinks.forEach(function (link) {
     link.classList.remove("active");
@@ -58,15 +53,11 @@ function updateActiveMenu() {
   });
 }
 
-
 // ตรวจตอน Scroll
 window.addEventListener("scroll", updateActiveMenu);
 
-
 // ตรวจทันทีตอนเปิดหน้าเว็บ
 updateActiveMenu();
-
-
 
 // PROJECT GALLERY
 
@@ -85,7 +76,6 @@ function openGallery(galleryId) {
   document.body.style.overflow = "hidden";
 }
 
-
 // ปิด Gallery
 function closeGallery(galleryId) {
   const gallery = document.getElementById(galleryId);
@@ -101,8 +91,6 @@ function closeGallery(galleryId) {
     document.body.style.overflow = "";
   }
 }
-
-
 
 // IMAGE LIGHTBOX
 
@@ -123,7 +111,6 @@ function openImage(imageSrc, imageAlt = "Project Screenshot") {
   // ล็อก Scroll
   document.body.style.overflow = "hidden";
 }
-
 
 // ปิดรูปแบบเต็มจอ
 function closeImage() {
@@ -148,8 +135,6 @@ function closeImage() {
   }
 }
 
-
-
 // CHECK OPEN STATE
 
 // เช็กว่ามี Gallery เปิดอยู่หรือไม่
@@ -157,15 +142,12 @@ function isGalleryOpen() {
   return document.querySelector(".gallery-modal.show") !== null;
 }
 
-
 // เช็กว่า Lightbox เปิดอยู่หรือไม่
 function isLightboxOpen() {
   const lightbox = document.getElementById("image-lightbox");
 
   return lightbox && lightbox.classList.contains("show");
 }
-
-
 
 // ESC KEY
 
@@ -192,13 +174,10 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-
-
 // CLICK OUTSIDE GALLERY
 
 const galleryModals =
   document.querySelectorAll(".gallery-modal");
-
 
 galleryModals.forEach(function (gallery) {
   gallery.addEventListener("click", function (event) {
@@ -213,13 +192,10 @@ galleryModals.forEach(function (gallery) {
   });
 });
 
-
-
 // CLICK OUTSIDE LIGHTBOX
 
 const imageLightbox =
   document.getElementById("image-lightbox");
-
 
 if (imageLightbox) {
   imageLightbox.addEventListener("click", function (event) {
@@ -231,15 +207,11 @@ if (imageLightbox) {
   });
 }
 
-
-
 // PREVENT IMAGE DRAG
-
 
 // กันการลากรูปใน Gallery
 const galleryImages =
   document.querySelectorAll(".gallery-item img");
-
 
 galleryImages.forEach(function (image) {
   image.setAttribute("draggable", "false");
