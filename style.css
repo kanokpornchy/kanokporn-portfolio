@@ -134,16 +134,32 @@ body {
   margin-bottom: 10px;
 }
 
+/* ==================================================
+   CAREER
+================================================== */
+
 .career {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 4px;
+
   color: #cbd5e1;
 
   margin-bottom: 25px;
 }
 
-.career span {
+.career > span:first-child {
   color: #ff9acb;
 
   font-weight: bold;
+}
+
+.career-tech {
+  color: #cbd5e1 !important;
+
+  font-weight: normal !important;
 }
 
 .intro {
@@ -1315,6 +1331,66 @@ footer {
 }
 
 /* ==================================================
+   LANGUAGE SWITCH TH / EN
+================================================== */
+
+#language-switch-container {
+  display: flex;
+
+  align-items: center;
+}
+
+.language-switch {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 4px;
+
+  margin-left: 22px;
+
+  padding: 4px;
+
+  background-color: #151e33;
+
+  border: 1px solid #334155;
+
+  border-radius: 999px;
+}
+
+.lang-btn {
+  min-width: 42px;
+
+  padding: 7px 11px;
+
+  border: none;
+
+  border-radius: 999px;
+
+  background-color: transparent;
+
+  color: #9ca6b8;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.lang-btn:hover {
+  color: white;
+}
+
+.lang-btn.active {
+  background-color: #ff9acb;
+
+  color: #111827;
+}
+
+/* ==================================================
    TABLET
 ================================================== */
 
@@ -1365,10 +1441,16 @@ footer {
 @media (max-width: 768px) {
   .navbar {
     padding: 0 6%;
+
+    gap: 12px;
   }
 
   .nav-menu {
     display: none;
+  }
+
+  .language-switch {
+    margin-left: auto;
   }
 
   /* HERO */
@@ -1405,6 +1487,10 @@ footer {
 
   .hero h2 {
     font-size: 21px;
+  }
+
+  .career {
+    align-items: center;
   }
 
   .hero-buttons {
@@ -1596,5 +1682,21 @@ footer {
     width: 100%;
 
     max-width: 280px;
+  }
+
+  /* LANGUAGE */
+
+  .language-switch {
+    gap: 2px;
+
+    padding: 3px;
+  }
+
+  .lang-btn {
+    min-width: 36px;
+
+    padding: 6px 8px;
+
+    font-size: 11px;
   }
 }
