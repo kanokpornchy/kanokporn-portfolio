@@ -1405,7 +1405,6 @@ footer {
 
   .profile-circle {
     width: 290px;
-
     height: 290px;
   }
 
@@ -1698,5 +1697,29 @@ footer {
     padding: 6px 8px;
 
     font-size: 11px;
+  }
+}
+
+/* ==================================================
+   FULL STACK CAREER LABEL
+   รองรับข้อความตำแหน่งที่ยาวขึ้น โดยไม่กระทบดีไซน์เดิม
+================================================== */
+
+.career > span:first-child {
+  max-width: 100%;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.career-tech {
+  max-width: 100%;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+  .career > span:first-child,
+  .career-tech {
+    text-align: center;
   }
 }

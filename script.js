@@ -1,12 +1,11 @@
 console.log("Portfolio website loaded");
 
 // ==================================================
-// LANGUAGE SWITCH (TH / EN)
+// TRANSLATIONS TH / EN
 // ==================================================
 
 const translations = {
   // ================= NAVBAR =================
-
   "หน้าแรก": "Home",
   "เกี่ยวกับฉัน": "About",
   "ทักษะ": "Skills",
@@ -15,15 +14,14 @@ const translations = {
   "ติดต่อ": "Contact",
 
   // ================= HOME =================
-
   "สวัสดีค่ะ ฉันคือ":
     "Hello, I'm",
 
   "นักศึกษาวิทยาการคอมพิวเตอร์":
     "Computer Science Student",
 
-  "นักศึกษาวิทยาการคอมพิวเตอร์ สนใจฝึกงานตำแหน่ง Software Developer มีพื้นฐานในการพัฒนา Web Application ทั้งด้าน Front-end การทำงานร่วมกับ Back-end และฐานข้อมูลเบื้องต้น พร้อมเรียนรู้และพัฒนาทักษะจากการทำงานจริง":
-    "Computer Science student seeking a Software Developer internship, with foundational experience in Web Application development, Front-end development, Back-end integration, and databases. Ready to learn and develop skills through real work experience.",
+  "นักศึกษาวิทยาการคอมพิวเตอร์ สนใจฝึกงานตำแหน่ง Full Stack Developer โดยมีพื้นฐานและความสนใจหลักด้าน Front-end พร้อมพื้นฐาน Back-end และฐานข้อมูลจากโปรเจกต์รายวิชา ต้องการพัฒนาทักษะทั้งสองฝั่งผ่านการทำงานจริง":
+    "Computer Science student seeking a Full Stack Developer internship, with a primary focus on Front-end development and foundational Back-end and database experience from academic projects. Eager to strengthen both Front-end and Back-end skills through real-world experience.",
 
   "ดูผลงาน":
     "View Projects",
@@ -32,18 +30,17 @@ const translations = {
     "Download CV",
 
   // ================= ABOUT =================
-
   "ฉันเป็นใคร และสนใจงานด้านไหน?":
     "Who am I and what kind of work am I interested in?",
 
-  "นักศึกษาสาขาวิทยาการคอมพิวเตอร์ มีความสนใจฝึกงานตำแหน่ง Software Developer":
-    "I am a Computer Science student interested in a Software Developer internship.",
+  "นักศึกษาสาขาวิทยาการคอมพิวเตอร์ มีความสนใจฝึกงานตำแหน่ง Full Stack Developer โดยมีพื้นฐานและความสนใจหลักด้าน Front-end":
+    "I am a Computer Science student interested in a Full Stack Developer internship, with a primary focus on Front-end development.",
 
-  "มีประสบการณ์จากโปรเจกต์รายวิชาในการวางแผน ออกแบบ และพัฒนา Web Application รวมถึงการทำงานด้าน Front-end การทำงานร่วมกับ Back-end และฐานข้อมูลเบื้องต้น":
-    "I have academic project experience in planning, designing, and developing Web Applications, including Front-end development, Back-end integration, and basic database work.",
+  "มีประสบการณ์จากโปรเจกต์รายวิชาในการวางแผน ออกแบบ และพัฒนา Web Application พร้อมพื้นฐานด้าน Back-end และ Database ในระดับเบื้องต้น และต้องการพัฒนาทักษะทั้งสองฝั่งผ่านการทำงานจริง":
+    "I have academic project experience in planning, designing, and developing Web Applications, with foundational Back-end and database knowledge. I would like to strengthen both Front-end and Back-end skills through real-world work.",
 
-  "พร้อมเรียนรู้เทคโนโลยีใหม่ ๆ และพัฒนาทักษะผ่านการทำงานจริง โดยสามารถฝึกงานได้ในช่วง มกราคม – เมษายน 2570":
-    "I am ready to learn new technologies and develop my skills through real work experience. I am available for an internship from January to April 2027.",
+  "พร้อมเรียนรู้เทคโนโลยีใหม่ ๆ ทำงานร่วมกับทีม และพัฒนาทักษะอย่างต่อเนื่อง โดยสามารถฝึกงานได้ในช่วง มกราคม – เมษายน 2570":
+    "I am ready to learn new technologies, collaborate with a team, and continuously improve my skills. I am available for an internship from January to April 2027.",
 
   "พัฒนาเว็บไซต์และระบบ โดยมีพื้นฐานทั้ง Front-end, Back-end และ Database":
     "Develop websites and systems with foundations in Front-end, Back-end, and databases.",
@@ -55,12 +52,10 @@ const translations = {
     "Analyze problems and find systematic solutions.",
 
   // ================= PROJECTS =================
-
   "ผลงานที่แสดงกระบวนการวิเคราะห์ ออกแบบ และพัฒนาระบบ จากโจทย์และปัญหาที่แตกต่างกัน":
     "Projects that demonstrate system analysis, design, and development across different requirements and problems.",
 
   // ================= PROJECT 01 =================
-
   "ระบบร้านขายดอกไม้ออนไลน์":
     "Online Flower Shop System",
 
@@ -74,7 +69,7 @@ const translations = {
     "Database System",
 
   "ระบบร้านขายดอกไม้ออนไลน์ รองรับการทำงานทั้งฝั่งผู้ใช้งานและผู้ดูแลระบบ ตั้งแต่การเลือกสินค้า การสั่งซื้อ การชำระเงิน ไปจนถึงการจัดการข้อมูลสินค้า และสถานะคำสั่งซื้อ":
-    "An online flower shop supporting both customers and administrators, from product selection, ordering, and payment to product data and order-status management.",
+    "An online flower shop supporting both customers and administrators, from product selection, ordering, and payment to product and order-status management.",
 
   "ปัญหา":
     "Problem",
@@ -122,7 +117,6 @@ const translations = {
     "View Code on GitHub",
 
   // ================= PROJECT 02 =================
-
   "ระบบตรวจจับข้อความหลอกลวงด้วย AI":
     "AI Scam Message Detection System",
 
@@ -166,7 +160,6 @@ const translations = {
     "Learned how to apply AI and NLP to a Web Application, including workflow design and result presentation.",
 
   // ================= PROJECT 03 =================
-
   "ระบบบริหารจัดการบริการรถสไลด์":
     "Slide Truck Service Management System",
 
@@ -207,38 +200,35 @@ const translations = {
     "Learned to design a multi-function back-office system, manage user permissions, and create workflows aligned with real work processes.",
 
   // ================= EXPERIENCE =================
-
   "พนักงานบริการ":
     "Service Staff",
 
   "ให้บริการและดูแลลูกค้า":
-    "Provided Customer Service",
+    "Provided customer service",
 
   "ประสานงานกับทีม":
-    "Coordinated With the Team",
+    "Coordinated with the team",
 
   "แก้ไขปัญหาเฉพาะหน้า":
-    "Handled Immediate Problems",
+    "Handled immediate problems",
 
   "ทำงานภายใต้สถานการณ์ที่ต้องการความรวดเร็ว":
-    "Worked Effectively in Fast-paced Situations",
+    "Worked effectively in fast-paced situations",
 
   "รับรายการและตรวจสอบความถูกต้อง":
-    "Took Orders and Checked Accuracy",
+    "Took orders and checked accuracy",
 
   "ประสานงานกับทีมที่เกี่ยวข้อง":
-    "Coordinated With Relevant Team Members",
+    "Coordinated with relevant team members",
 
   "ทำงานภายใต้ความกดดันได้":
-    "Worked Effectively Under Pressure",
+    "Worked effectively under pressure",
 
   // ================= CONTACT =================
-
-  "เปิดรับโอกาสฝึกงานตำแหน่ง Software Developer และพร้อมพูดคุยเกี่ยวกับโปรเจกต์หรือโอกาสร่วมงาน":
-    "Open to Software Developer internship opportunities and happy to discuss projects or potential collaboration.",
+  "เปิดรับโอกาสฝึกงานตำแหน่ง Full Stack Developer โดยเน้น Front-end และพร้อมพูดคุยเกี่ยวกับโปรเจกต์หรือโอกาสร่วมงาน":
+    "Open to Full Stack Developer internship opportunities with a Front-end focus, and happy to discuss projects or potential collaboration.",
 
   // ================= GALLERY =================
-
   "ตัวอย่างหน้าจอและการทำงานของระบบร้านขายดอกไม้ออนไลน์":
     "Examples of screens and features from the Online Flower Shop system.",
 
@@ -272,90 +262,151 @@ const translations = {
 
 
 // ==================================================
-// STORE ORIGINAL CONTENT
+// NORMALIZE TEXT
+// แก้ปัญหาข้อความใน HTML ถูกขึ้นบรรทัดใหม่
+// ==================================================
+
+function normalizeText(text) {
+  return String(text || "")
+    .replace(/\s+/g, " ")
+    .replace(
+      /([\u0E00-\u0E7F])\s+(?=[\u0E00-\u0E7F])/g,
+      "$1"
+    )
+    .trim();
+}
+
+
+// ==================================================
+// NORMALIZED TRANSLATION MAP
+// ==================================================
+
+const normalizedTranslations =
+  Object.fromEntries(
+    Object.entries(translations).map(
+      function ([key, value]) {
+        return [
+          normalizeText(key),
+          value
+        ];
+      }
+    )
+  );
+
+
+// ==================================================
+// ORIGINAL CONTENT
 // ==================================================
 
 const originalTextNodes = [];
 const originalAttributes = [];
 
-function normalizeText(text) {
-  return text.replace(/\s+/g, " ").trim();
-}
+
+// ==================================================
+// STORE ORIGINAL PAGE CONTENT
+// ==================================================
 
 function rememberTranslatableContent() {
-  const walker = document.createTreeWalker(
-    document.body,
-    NodeFilter.SHOW_TEXT,
-    {
-      acceptNode(node) {
-        const parent = node.parentElement;
 
-        if (!parent) {
-          return NodeFilter.FILTER_REJECT;
+  const walker =
+    document.createTreeWalker(
+      document.body,
+      NodeFilter.SHOW_TEXT,
+      {
+        acceptNode(node) {
+
+          const parent =
+            node.parentElement;
+
+          if (!parent) {
+            return NodeFilter.FILTER_REJECT;
+          }
+
+          const tag =
+            parent.tagName;
+
+          if (
+            [
+              "SCRIPT",
+              "STYLE",
+              "NOSCRIPT"
+            ].includes(tag)
+          ) {
+            return NodeFilter.FILTER_REJECT;
+          }
+
+          const value =
+            normalizeText(
+              node.nodeValue
+            );
+
+          if (!value) {
+            return NodeFilter.FILTER_REJECT;
+          }
+
+          return NodeFilter.FILTER_ACCEPT;
         }
-
-        const tag = parent.tagName;
-
-        if (
-          ["SCRIPT", "STYLE", "NOSCRIPT"].includes(tag)
-        ) {
-          return NodeFilter.FILTER_REJECT;
-        }
-
-        const normalized = normalizeText(
-          node.nodeValue || ""
-        );
-
-        if (!normalized) {
-          return NodeFilter.FILTER_REJECT;
-        }
-
-        return NodeFilter.FILTER_ACCEPT;
       }
-    }
-  );
+    );
 
   let node;
 
-  while ((node = walker.nextNode())) {
+  while (
+    (node = walker.nextNode())
+  ) {
     originalTextNodes.push({
       node: node,
       original: node.nodeValue
     });
   }
 
+
   document
     .querySelectorAll(
       "[title], [alt], [placeholder]"
     )
-    .forEach(function (element) {
-      [
-        "title",
-        "alt",
-        "placeholder"
-      ].forEach(function (attribute) {
-        if (
-          element.hasAttribute(attribute)
-        ) {
-          originalAttributes.push({
-            element: element,
-            attribute: attribute,
-            original: element.getAttribute(attribute)
-          });
-        }
-      });
-    });
+    .forEach(
+      function (element) {
+
+        [
+          "title",
+          "alt",
+          "placeholder"
+        ].forEach(
+          function (attribute) {
+
+            if (
+              element.hasAttribute(
+                attribute
+              )
+            ) {
+              originalAttributes.push({
+                element: element,
+                attribute: attribute,
+                original:
+                  element.getAttribute(
+                    attribute
+                  )
+              });
+            }
+
+          }
+        );
+
+      }
+    );
 }
 
 
 // ==================================================
-// TRANSLATE TEXT
+// TRANSLATE VALUE
 // ==================================================
 
 function translateTextValue(
   original,
   language
 ) {
+
   if (language === "th") {
     return original;
   }
@@ -364,7 +415,9 @@ function translateTextValue(
     normalizeText(original);
 
   const translated =
-    translations[normalized];
+    normalizedTranslations[
+      normalized
+    ];
 
   if (!translated) {
     return original;
@@ -385,27 +438,37 @@ function translateTextValue(
 
 
 // ==================================================
-// UPDATE LANGUAGE
+// UPDATE PAGE LANGUAGE
 // ==================================================
 
-function updatePageLanguage(language) {
+function updatePageLanguage(
+  language
+) {
+
   const lang =
     language === "en"
       ? "en"
       : "th";
 
+
+  // เปลี่ยนข้อความในหน้า
   originalTextNodes.forEach(
     function (item) {
+
       item.node.nodeValue =
         translateTextValue(
           item.original,
           lang
         );
+
     }
   );
 
+
+  // เปลี่ยน title / alt / placeholder
   originalAttributes.forEach(
     function (item) {
+
       item.element.setAttribute(
         item.attribute,
         translateTextValue(
@@ -413,54 +476,90 @@ function updatePageLanguage(language) {
           lang
         )
       );
+
     }
   );
 
-  document.documentElement.lang = lang;
 
-  // Title
-  document.title =
-    "Kanokporn Portfolio | Software Developer Intern";
+  document.documentElement.lang =
+    lang;
 
-  // Meta Description
+
+  // ================= TITLE =================
+
+  if (lang === "en") {
+
+    document.title =
+      "Kanokporn Portfolio | Full Stack Developer Intern";
+
+  } else {
+
+    document.title =
+      "Kanokporn Portfolio | Full Stack Developer Intern";
+
+  }
+
+
+  // ================= META DESCRIPTION =================
+
   const description =
     document.querySelector(
       'meta[name="description"]'
     );
 
   if (description) {
+
     if (lang === "en") {
+
       description.setAttribute(
         "content",
-        "Portfolio of Kanokporn Chaiyakhao, a Computer Science student seeking a Software Developer internship."
+        "Portfolio of Kanokporn Chaiyakhao, a Computer Science student seeking a Full Stack Developer internship with a Front-end focus and basic Back-end skills."
       );
+
     } else {
+
       description.setAttribute(
         "content",
-        "Portfolio ของ Kanokporn Chaiyakhao นักศึกษาวิทยาการคอมพิวเตอร์ สนใจฝึกงานตำแหน่ง Software Developer"
+        "Portfolio ของ Kanokporn Chaiyakhao นักศึกษาวิทยาการคอมพิวเตอร์ สนใจฝึกงานตำแหน่ง Full Stack Developer โดยเน้น Front-end และมีพื้นฐาน Back-end"
       );
+
     }
+
   }
 
-  // Update language buttons
+
+  // ================= BUTTON ACTIVE =================
+
   document
-    .querySelectorAll(".lang-btn")
-    .forEach(function (button) {
-      const active =
-        button.dataset.lang === lang;
+    .querySelectorAll(
+      ".lang-btn"
+    )
+    .forEach(
+      function (button) {
 
-      button.classList.toggle(
-        "active",
-        active
-      );
+        const active =
+          button.dataset.lang ===
+          lang;
 
-      button.setAttribute(
-        "aria-pressed",
-        active ? "true" : "false"
-      );
-    });
+        button.classList.toggle(
+          "active",
+          active
+        );
 
-  // Save selected language
+        button.setAttribute(
+          "aria-pressed",
+          active
+            ? "true"
+            : "false"
+        );
+
+      }
+    );
+
+
+  // ================= REMEMBER LANGUAGE =================
+  // จำภาษาที่กดล่าสุด
+
   localStorage.setItem(
     "portfolioLanguage",
     lang
@@ -469,10 +568,11 @@ function updatePageLanguage(language) {
 
 
 // ==================================================
-// CREATE LANGUAGE SWITCH
+// CREATE LANGUAGE BUTTON
 // ==================================================
 
 function createLanguageSwitch() {
+
   const container =
     document.getElementById(
       "language-switch-container"
@@ -482,8 +582,11 @@ function createLanguageSwitch() {
     return;
   }
 
+
   const wrapper =
-    document.createElement("div");
+    document.createElement(
+      "div"
+    );
 
   wrapper.className =
     "language-switch";
@@ -494,14 +597,24 @@ function createLanguageSwitch() {
   );
 
 
-  // TH Button
-  const thButton =
-    document.createElement("button");
+  // ================= TH =================
 
-  thButton.type = "button";
-  thButton.className = "lang-btn";
-  thButton.dataset.lang = "th";
-  thButton.textContent = "TH";
+  const thButton =
+    document.createElement(
+      "button"
+    );
+
+  thButton.type =
+    "button";
+
+  thButton.className =
+    "lang-btn";
+
+  thButton.dataset.lang =
+    "th";
+
+  thButton.textContent =
+    "TH";
 
   thButton.setAttribute(
     "aria-label",
@@ -509,14 +622,24 @@ function createLanguageSwitch() {
   );
 
 
-  // EN Button
-  const enButton =
-    document.createElement("button");
+  // ================= EN =================
 
-  enButton.type = "button";
-  enButton.className = "lang-btn";
-  enButton.dataset.lang = "en";
-  enButton.textContent = "EN";
+  const enButton =
+    document.createElement(
+      "button"
+    );
+
+  enButton.type =
+    "button";
+
+  enButton.className =
+    "lang-btn";
+
+  enButton.dataset.lang =
+    "en";
+
+  enButton.textContent =
+    "EN";
 
   enButton.setAttribute(
     "aria-label",
@@ -524,15 +647,25 @@ function createLanguageSwitch() {
   );
 
 
-  wrapper.appendChild(thButton);
-  wrapper.appendChild(enButton);
+  wrapper.appendChild(
+    thButton
+  );
 
-  container.appendChild(wrapper);
+  wrapper.appendChild(
+    enButton
+  );
 
+  container.appendChild(
+    wrapper
+  );
+
+
+  // ================= CLICK =================
 
   wrapper.addEventListener(
     "click",
     function (event) {
+
       const button =
         event.target.closest(
           ".lang-btn"
@@ -545,6 +678,7 @@ function createLanguageSwitch() {
       updatePageLanguage(
         button.dataset.lang
       );
+
     }
   );
 }
@@ -557,6 +691,10 @@ function createLanguageSwitch() {
 rememberTranslatableContent();
 
 createLanguageSwitch();
+
+
+// ถ้าเคยเลือกภาษาแล้ว → ใช้ภาษาล่าสุด
+// ถ้าไม่เคยเลือก → เริ่มภาษาไทย
 
 const savedLanguage =
   localStorage.getItem(
@@ -572,10 +710,8 @@ updatePageLanguage(
 // CLEAN URL PARAMETER
 // ==================================================
 
-// ลบ ?utm_source=... หรือ query string ออกจาก URL
-// โดยไม่ Reload หน้าเว็บ
-
 if (window.location.search) {
+
   const cleanUrl =
     window.location.origin +
     window.location.pathname +
@@ -586,6 +722,7 @@ if (window.location.search) {
     document.title,
     cleanUrl
   );
+
 }
 
 
@@ -603,11 +740,14 @@ const sections =
     "section"
   );
 
+
 function updateActiveMenu() {
+
   let currentSection = "";
 
   sections.forEach(
     function (section) {
+
       const sectionTop =
         section.offsetTop;
 
@@ -622,29 +762,43 @@ function updateActiveMenu() {
           sectionHeight -
           160
       ) {
+
         currentSection =
-          section.getAttribute("id");
+          section.getAttribute(
+            "id"
+          );
+
       }
+
     }
   );
 
+
   navLinks.forEach(
     function (link) {
+
       link.classList.remove(
         "active"
       );
 
       if (
-        link.getAttribute("href") ===
+        link.getAttribute(
+          "href"
+        ) ===
         "#" + currentSection
       ) {
+
         link.classList.add(
           "active"
         );
+
       }
+
     }
   );
+
 }
+
 
 window.addEventListener(
   "scroll",
@@ -658,13 +812,17 @@ updateActiveMenu();
 // PROJECT GALLERY
 // ==================================================
 
-function openGallery(galleryId) {
+function openGallery(
+  galleryId
+) {
+
   const gallery =
     document.getElementById(
       galleryId
     );
 
   if (!gallery) {
+
     console.log(
       "Gallery not found:",
       galleryId
@@ -673,15 +831,21 @@ function openGallery(galleryId) {
     return;
   }
 
+
   gallery.classList.add(
     "show"
   );
 
   document.body.style.overflow =
     "hidden";
+
 }
 
-function closeGallery(galleryId) {
+
+function closeGallery(
+  galleryId
+) {
+
   const gallery =
     document.getElementById(
       galleryId
@@ -691,14 +855,19 @@ function closeGallery(galleryId) {
     return;
   }
 
+
   gallery.classList.remove(
     "show"
   );
 
+
   if (!isLightboxOpen()) {
+
     document.body.style.overflow =
       "";
+
   }
+
 }
 
 
@@ -710,6 +879,7 @@ function openImage(
   imageSrc,
   imageAlt = "Project Screenshot"
 ) {
+
   const lightbox =
     document.getElementById(
       "image-lightbox"
@@ -719,6 +889,7 @@ function openImage(
     document.getElementById(
       "lightbox-image"
     );
+
 
   if (
     !lightbox ||
@@ -727,21 +898,27 @@ function openImage(
     return;
   }
 
+
   lightboxImage.src =
     imageSrc;
 
   lightboxImage.alt =
     imageAlt;
 
+
   lightbox.classList.add(
     "show"
   );
 
+
   document.body.style.overflow =
     "hidden";
+
 }
 
+
 function closeImage() {
+
   const lightbox =
     document.getElementById(
       "image-lightbox"
@@ -752,25 +929,34 @@ function closeImage() {
       "lightbox-image"
     );
 
+
   if (!lightbox) {
     return;
   }
+
 
   lightbox.classList.remove(
     "show"
   );
 
+
   if (lightboxImage) {
+
     lightboxImage.src = "";
 
     lightboxImage.alt =
       "Project Screenshot";
+
   }
 
+
   if (!isGalleryOpen()) {
+
     document.body.style.overflow =
       "";
+
   }
+
 }
 
 
@@ -779,14 +965,18 @@ function closeImage() {
 // ==================================================
 
 function isGalleryOpen() {
+
   return (
     document.querySelector(
       ".gallery-modal.show"
     ) !== null
   );
+
 }
 
+
 function isLightboxOpen() {
+
   const lightbox =
     document.getElementById(
       "image-lightbox"
@@ -798,6 +988,7 @@ function isLightboxOpen() {
       "show"
     )
   );
+
 }
 
 
@@ -808,31 +999,43 @@ function isLightboxOpen() {
 document.addEventListener(
   "keydown",
   function (event) {
+
     if (
-      event.key !== "Escape"
+      event.key !==
+      "Escape"
     ) {
       return;
     }
 
+
+    // ปิดรูปก่อน
     if (isLightboxOpen()) {
+
       closeImage();
 
       return;
     }
 
+
+    // ปิด Gallery
     const openGalleryElement =
       document.querySelector(
         ".gallery-modal.show"
       );
 
     if (openGalleryElement) {
+
       openGalleryElement
         .classList
-        .remove("show");
+        .remove(
+          "show"
+        );
 
       document.body.style.overflow =
         "";
+
     }
+
   }
 );
 
@@ -846,23 +1049,31 @@ const galleryModals =
     ".gallery-modal"
   );
 
+
 galleryModals.forEach(
   function (gallery) {
+
     gallery.addEventListener(
       "click",
       function (event) {
+
         if (
-          event.target === gallery
+          event.target ===
+          gallery
         ) {
+
           gallery.classList.remove(
             "show"
           );
 
           document.body.style.overflow =
             "";
+
         }
+
       }
     );
+
   }
 );
 
@@ -876,18 +1087,25 @@ const imageLightbox =
     "image-lightbox"
   );
 
+
 if (imageLightbox) {
+
   imageLightbox.addEventListener(
     "click",
     function (event) {
+
       if (
         event.target ===
         imageLightbox
       ) {
+
         closeImage();
+
       }
+
     }
   );
+
 }
 
 
@@ -900,11 +1118,14 @@ const galleryImages =
     ".gallery-item img"
   );
 
+
 galleryImages.forEach(
   function (image) {
+
     image.setAttribute(
       "draggable",
       "false"
     );
+
   }
 );
